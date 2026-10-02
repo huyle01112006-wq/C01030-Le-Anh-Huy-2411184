@@ -1,0 +1,14 @@
+# Giữ lại file .elf để Proteus chạy được liền
+!firmware/Debug/*.elf
+!firmware/Debug/*.hex
+
+# Bỏ qua các file object/tạm không cần thiết
+firmware/Debug/*.o
+firmware/Debug/*.d
+firmware/Debug/*.su
+firmware/Debug/*.cyclo
+
+# Bỏ qua file rác tự sinh của Proteus
+*.pdsprj.*.workspace
+*.pdsprj.*.bak
+*.PDSBACKUP
